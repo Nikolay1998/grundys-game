@@ -34,12 +34,13 @@ public class Client {
                 break;
             }
             System.out.println(state);
-            while (!state.crackHeap(0,0,0)) {
+            while (true) {
                 System.out.println("какую кучку вы хотите разбить?");
                 int heapNumber = scanner.nextInt();
                 System.out.println("укажите кол-во камней в каждой кучке");
                 int first = scanner.nextInt();
                 int second = scanner.nextInt();
+                if(state.crackHeap(heapNumber, first, second)) break;
             }
             out.writeUTF(g.toJson(state));
             if(state.isGameOver()){

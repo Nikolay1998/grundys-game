@@ -21,7 +21,7 @@ public class State {
     }
 
     public boolean crackHeap(int heapNum, int val1, int val2){
-        if((heapNum < state.size()) && (heapNum > 0) && (val1 > 0) && (val2 > 0) && (val1+val2 == state.get(heapNum)) && (val1 != val2)){
+        if((heapNum < state.size()) && (heapNum >= 0) && (val1 > 0) && (val2 > 0) && (val1+val2 == state.get(heapNum)) && (val1 != val2)){
             state.set(heapNum, val1);
             if (heapNum == state.size() - 1) {
                 state.add(val2);

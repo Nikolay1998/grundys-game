@@ -18,13 +18,13 @@ public class Server {
             MS1.recieveMessage();
             state = g.fromJson(MS1.getMessage(), State.class);
             System.out.println(state);
-            if(state.isGameOver()) break;
+           // if(state.isGameOver()) break;
 
             MS2.sendMessage(g.toJson(state));
             MS2.recieveMessage();
             state = g.fromJson(MS2.getMessage(), State.class);
             System.out.println(state);
-            if(state.isGameOver()) break;
+            //if(state.isGameOver()) break;
         }
     }
 }
