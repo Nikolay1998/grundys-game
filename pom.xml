@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>aa</groupId>
-    <artifactId>TechPro3(1)</artifactId>
+    <artifactId>TechPro3</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -16,5 +16,9 @@
         </dependency>
 
     </dependencies>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
 
 </project>
