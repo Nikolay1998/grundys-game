@@ -1,6 +1,3 @@
-# TechPro3
-27. Сетевая игра Гранди для двух игроков. Изначально
-имеется кучка из 10 камней. Игроки ходят по очереди. За свой
-ход игрок может разделить одну из кучек на две непустые кучки
-разных размеров. Проигрывает игрок, который не может сделать
-ход.
+# Grundy's game
+Simple java application based on java.net.Socket. It represents a
+server that manages the interactions between two clients on local host.
